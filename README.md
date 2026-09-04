@@ -39,7 +39,7 @@ detector collapses):
 | Binoculars | 0.76 |
 | **Truth-in-AI** | **0.996** |
 
-No neural inference. CPU-only. Sub-10-millisecond per document.
+No neural inference. CPU-only. Sub 10-millisecond per document.
 
 ## Verify it yourself
 
