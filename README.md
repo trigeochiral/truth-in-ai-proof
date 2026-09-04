@@ -11,7 +11,7 @@ results claimed below. We value honesty, integrity, and the scientific method, a
 Yes, I used AI to write the rest of this. Thank you for your visit. 
 
 September 4, 2026 
- **RAID 0.87–0.999 accuracy across all 8 domains** — mean AUC 0.
+ **RAID 0.87–1.0000 accuracy across all 8 domains** — mean AUC 0.
 9302 across 30 attack × domain configurations of the RAID benchmar
 k. Code sits at the 0.87 floor — a domain most detectors decline t
 o attempt.
