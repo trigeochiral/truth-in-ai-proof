@@ -40,15 +40,6 @@ of the Truth-in-AI detector and its components; see the accompanying
 timestamp of the signed benchmark result, and the private provenance
 records held by the authors.
 
-## Signature
-By affixing this notice, the authors attest under penalty of perjury
-that they are the sole originators of the work described above, that
-no portion has been misappropriated from any third party, and that no
-license inconsistent with this trade-secret claim has been granted.
 
-  David Zubick     ______________________________
-  Jennifer Huff    ______________________________
-
----
 *Unauthorized use, disclosure, reverse engineering, or reproduction is
 prohibited and will be prosecuted to the fullest extent of law.*
