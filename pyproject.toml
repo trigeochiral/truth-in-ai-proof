@@ -5,9 +5,9 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "truth-in-ai-verify"
 version = "1.0.0"
-description = "Third-party verifier for TriGeoChiral Truth-in-AI signed benchmark results (Ed25519 + OpenTimestamps)"
+description = "verifier for TriGeoChiral Truth-in-AI signed benchmark results (Ed25519 + OpenTimestamps)"
 readme = "README.md"
-license = {text = "Proprietary — see LICENSE"}
+license = {text = "Proprietary — see LICENSE, contact for interest"}
 requires-python = ">=3.9"
 authors = [
   {name = "David Zubick", email = "trigeochiral@gmail.com"},
