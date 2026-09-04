@@ -1,0 +1,25 @@
+# build artifacts
+dist/
+build/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+
+# private keys / secrets — must NEVER be committed
+privkey*.pem
+private*.pem
+*.priv.pem
+secrets/
+.env
+.env.*
+
+# venvs
+.venv/
+venv/
+env/
+
+# editor
+.idea/
+.vscode/
+*.swp

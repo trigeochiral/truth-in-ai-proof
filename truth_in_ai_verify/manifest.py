@@ -66,10 +66,18 @@ def verify_manifest(manifest: dict) -> list:
 
 
 if __name__ == "__main__":
-    # CLI: build a manifest for the current RAID + dmitva files
-    m = make_manifest({
-        "raid_extra_0": "/home/liveuser/geometric-engineering/text_probe/datasets/raid/extra-0.parquet",
-        "raid_extra_1": "/home/liveuser/geometric-engineering/text_probe/datasets/raid/extra-1.parquet",
-        "dmitva":        "/home/liveuser/geometric-engineering/text_probe/data/model_training_dataset.csv",
-    })
-    print(json.dumps(m, indent=2))
+    # CLI: build a manifest for a caller-supplied set of dataset files.
+    # NO filesystem paths are hard-coded in this file -- every path must
+    # be provided by the caller via --dataset NAME PATH.
+    import argparse
+    ap = argparse.ArgumentParser(description="Build a signed-manifest input.")
+    ap.add_argument("--dataset", nargs=2, action="append",
+                    metavar=("NAME", "PATH"), required=True,
+                    help="Register a dataset file. Repeat for multiple.")
+    ap.add_argument("--model", metavar="PATH", default=None,
+                    help="Optional model file to include in the manifest.")
+    ap.add_argument("--seed", type=int, default=42)
+    args = ap.parse_args()
+    print(json.dumps(
+        make_manifest(dict(args.dataset), model_file=args.model, seed=args.seed),
+        indent=2))
