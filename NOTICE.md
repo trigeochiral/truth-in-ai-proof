@@ -1,45 +1,57 @@
-# NOTICE OF AUTHORSHIP AND TRADE SECRET STATUS
+# Notice of Authorship and Ownership
 
 ## Work
-**Proofline** — statistical AI-generated-text detector developed by
-TriGeoChiral Engineering. The detector, its feature extractor, its
-tokenizer, its trained model parameters, and the source code and design
-of each component are proprietary trade secrets of the authors named
-below.
+
+**Proofline** — a statistical AI-generated-text detector developed by
+TriGeoChiral Engineering.
 
 ## Authors
+
 - David Zubick
 - Jennifer Huff
 
 Contact: trigeochiral@gmail.com
 
-## Trade Secret Declaration
-The Proofline detector and all associated source code, algorithms,
-feature construction, tokenizer design, and trained model parameters
-are **PROPRIETARY TRADE SECRETS** of David Zubick and Jennifer Huff.
+## Ownership
 
-Protection is claimed under, without limitation:
-- U.S. Defend Trade Secrets Act of 2016 (18 U.S.C. § 1836)
-- Uniform Trade Secrets Act (UTSA), as enacted in the relevant
-  jurisdiction
-- Applicable state common law of trade secrets
-- Article 39 TRIPS Agreement (international)
+The Proofline detector — its feature extractor, tokenizer, encoder and
+trained model parameters — is proprietary and confidential. It is not
+published in this repository, is not distributed in the
+`proofline-verify` package, and is available only under a separate
+commercial agreement.
 
-Reasonable measures to maintain secrecy include, without limitation:
-- Distribution of the detector source restricted to signed NDA
-  counterparties
-- File-system access controls
-- Network access controls
-- No distribution of source, model, or tokenizer through this
-  repository or any other public channel
+The verifier published here contains no detector. It reads a signed result
+and checks it; it cannot produce one.
 
-## Priority-of-Invention Anchor
-A separate cryptographic timestamp establishes the invention priority
-of the Proofline detector and its components; see the accompanying
-`RAID.signed.json.ots` OpenTimestamps proof for a Bitcoin-anchored
-timestamp of the signed benchmark result, and the private provenance
-records held by the authors.
+## What is published, and why
 
+This repository publishes signed benchmark results, the public key they
+verify against, and the tool that checks them. That is deliberate: a
+detection claim that cannot be re-examined by the person relying on it is
+not worth much, particularly where the result may affect a student, an
+employee or a party to a dispute.
 
-*Unauthorized use, disclosure, reverse engineering, or reproduction is
-prohibited and will be prosecuted to the fullest extent of law.*
+Anyone may verify these results, analyse the per-document scores they
+contain, compare them against other detectors, and publish the outcome.
+See `LICENSE` for the terms.
+
+## Timestamping
+
+`RAID.signed.json.ots` is an OpenTimestamps proof that commits the SHA-256
+of the signed RAID payload to the Bitcoin blockchain, establishing that the
+result existed in its published form at the time it was anchored. Verify it
+with the reference client:
+
+```bash
+pip install opentimestamps-client
+ots upgrade RAID.signed.json.ots
+ots verify RAID.signed.json.ots -f RAID.signed.json
+```
+
+This timestamps the *result*. It is not, on its own, a claim of priority of
+invention, and it is not a patent filing.
+
+---
+
+Copyright (c) 2026 David Zubick & Jennifer Huff (TriGeoChiral Engineering).
+All rights not expressly granted in `LICENSE` are reserved.
