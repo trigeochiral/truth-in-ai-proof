@@ -5,7 +5,7 @@ ALL RIGHTS RESERVED.
 ================================================================================
 
 The materials in this repository — including but not limited to the
-`truth_in_ai_verify` Python package, `PROTOCOL.md`, `NOTICE.md`, the signed
+`proofline_verify` Python package, `PROTOCOL.md`, `NOTICE.md`, the signed
 result files, the `MANIFEST.sha256` document, and all associated code and
 documentation (collectively, the "Materials") — are the proprietary work of
 David Zubick and Jennifer Huff and are protected as trade secrets under
@@ -17,10 +17,10 @@ Article 39 TRIPS, and applicable state and international law.
 Subject to the restrictions below, and only for so long as you comply with
 them, you are permitted to:
 
-  (a) install the `truth-in-ai-verify` package from PyPI or clone this
+  (a) install the `proofline-verify` package from PyPI or clone this
       repository;
   (b) execute the verifier for the sole purpose of confirming the authenticity
-      of a Truth-in-AI TREVS signed result (Ed25519 signature verification,
+      of a Proofline signed result (Ed25519 signature verification,
       recomputation of stored AUCs, and inspection of the associated
       OpenTimestamps Bitcoin proofs);
   (c) read the code for the purpose described in (b).
@@ -44,7 +44,7 @@ Jennifer Huff:
      directly or as part of a dataset;
   5. Remove, alter, or obscure any copyright notice, trade-secret notice,
      signature, or Bitcoin timestamp reference contained in the Materials;
-  6. Use the name "TriGeoChiral", "Truth-in-AI", "TREVS", or any confusingly
+  6. Use the name "TriGeoChiral", "Proofline", "Truth-in-AI", or any confusingly
      similar mark to identify a competing product, service, or endorsement;
   7. Publish, cite, or represent any modified or forged result as being
      produced or endorsed by David Zubick, Jennifer Huff, or TriGeoChiral
@@ -78,7 +78,7 @@ Materials in your possession or control.
 For licensing, integration, or partnership inquiries:
     trigeochiral@gmail.com
 
-TriGeoChiral Engineering — Providing Truth-in-AI, by NOT using it.
+TriGeoChiral Engineering — Providing Proofline, by NOT using AI.
 
 --- ADDITIONAL TERMS ---
 
@@ -89,7 +89,7 @@ you must not access the Materials.
 NO COMPETING USE. Without limiting the Restrictions above, you may not use
 the Materials, or any knowledge derived from them, to build, train, tune,
 market, or operate any AI-generated-text detection product, service, or
-research artifact that competes, directly or indirectly, with Truth-in-AI
+research artifact that competes, directly or indirectly, with Proofline
 or with any product or service offered by TriGeoChiral Engineering.
 
 CONFIDENTIALITY. Any information you obtain about the Materials that is

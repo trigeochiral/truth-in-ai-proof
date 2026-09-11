@@ -1,4 +1,4 @@
-"""CLI entry point: truth-in-ai-verify"""
+"""CLI entry point: proofline-verify"""
 import sys
 from .verify import main as verify_main
 

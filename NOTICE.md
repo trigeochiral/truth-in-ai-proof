@@ -1,7 +1,7 @@
 # NOTICE OF AUTHORSHIP AND TRADE SECRET STATUS
 
 ## Work
-**Truth-in-AI** — statistical AI-generated-text detector developed by
+**Proofline** — statistical AI-generated-text detector developed by
 TriGeoChiral Engineering. The detector, its feature extractor, its
 tokenizer, its trained model parameters, and the source code and design
 of each component are proprietary trade secrets of the authors named
@@ -14,7 +14,7 @@ below.
 Contact: trigeochiral@gmail.com
 
 ## Trade Secret Declaration
-The Truth-in-AI detector and all associated source code, algorithms,
+The Proofline detector and all associated source code, algorithms,
 feature construction, tokenizer design, and trained model parameters
 are **PROPRIETARY TRADE SECRETS** of David Zubick and Jennifer Huff.
 
@@ -35,7 +35,7 @@ Reasonable measures to maintain secrecy include, without limitation:
 
 ## Priority-of-Invention Anchor
 A separate cryptographic timestamp establishes the invention priority
-of the Truth-in-AI detector and its components; see the accompanying
+of the Proofline detector and its components; see the accompanying
 `RAID.signed.json.ots` OpenTimestamps proof for a Bitcoin-anchored
 timestamp of the signed benchmark result, and the private provenance
 records held by the authors.

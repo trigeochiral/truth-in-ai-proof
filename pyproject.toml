@@ -3,9 +3,9 @@ requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "truth-in-ai-verify"
-version = "1.0.0"
-description = "verifier for TriGeoChiral Truth-in-AI signed benchmark results (Ed25519 + OpenTimestamps)"
+name = "proofline-verify"
+version = "2.0.0"
+description = "Verifier for Proofline signed benchmark results (Ed25519 + dataset manifest + AUC recompute)"
 readme = "README.md"
 license = {text = "Proprietary — see LICENSE, contact for interest"}
 requires-python = ">=3.9"
@@ -16,7 +16,7 @@ authors = [
 maintainers = [
   {name = "TriGeoChiral Engineering", email = "trigeochiral@gmail.com"},
 ]
-keywords = ["ai-detection", "trevs", "opentimestamps", "ed25519", "audit", "reproducible", "trigeochiral"]
+keywords = ["ai-detection", "opentimestamps", "ed25519", "audit", "reproducible", "proofline", "trigeochiral"]
 classifiers = [
   "License :: Other/Proprietary License",
   "Programming Language :: Python :: 3",
@@ -37,14 +37,14 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage      = "https://github.com/trigeochiral/truth-in-ai-proof"
-Repository    = "https://github.com/trigeochiral/truth-in-ai-proof"
-Documentation = "https://github.com/trigeochiral/truth-in-ai-proof/blob/main/README.md"
-Issues        = "https://github.com/trigeochiral/truth-in-ai-proof/issues"
+Homepage      = "https://github.com/trigeochiral/proofline-proof"
+Repository    = "https://github.com/trigeochiral/proofline-proof"
+Documentation = "https://github.com/trigeochiral/proofline-proof/blob/main/README.md"
+Issues        = "https://github.com/trigeochiral/proofline-proof/issues"
 "Priority Anchor" = "https://opentimestamps.org"
 
 [project.scripts]
-truth-in-ai-verify = "truth_in_ai_verify.cli:main"
+proofline-verify = "proofline_verify.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["truth_in_ai_verify*"]
+include = ["proofline_verify*"]

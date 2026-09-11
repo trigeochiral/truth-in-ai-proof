@@ -1,5 +1,5 @@
 """
-Third-party TREVS verifier.
+Third-party Proofline verifier.
 
 Given a signed result blob and (optionally) a signing public key, this
 tool re-runs the evaluation and confirms every published metric.
@@ -9,9 +9,9 @@ import argparse, json, os, sys
 import numpy as np
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from truth_in_ai_verify.manifest   import verify_manifest
-from truth_in_ai_verify.sign       import verify_signature
-from truth_in_ai_verify.statistics import bootstrap_auc_ci
+from proofline_verify.manifest   import verify_manifest
+from proofline_verify.sign       import verify_signature
+from proofline_verify.statistics import bootstrap_auc_ci
 from sklearn.metrics import roc_auc_score
 
 

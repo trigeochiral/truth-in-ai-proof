@@ -1,5 +1,5 @@
 """
-Statistical tests for the TREVS protocol.
+Statistical tests for the Proofline evaluation protocol.
 
 - DeLong AUC comparison (DeLong et al. 1988) [verify]
 - Bootstrap CI for AUC (Efron 1979) [verify]
